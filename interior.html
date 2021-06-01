@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charst="utf-8">
+        <title>UP GOLD</title>
+        <link rel="stylesheet" href="interior.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </head>
+    <body>
+        <nav>
+            <header id="home">
+                <a class="logo" href="file:///Users/ogatasaki/Downloads/UpGold/index.html"><img src="img/header-logo.jpg" alt="ロゴ画像"></a>
+                <div class="header-logo">
+                    <a class="home-btn" href="#home"></a>
+                </div>
+                <div class="pc">
+                    <div class="navbar">
+                        <ul class="gnav">
+                            <li><a href="file:///Users/ogatasaki/Downloads/UpGold/member.html">MEMBER</a></li>
+                            <li class="dropdown">
+                                <a href="#">SERVICE&PRICE<i class="fas fa-caret-down"></i></a>
+                                <ul class="drop-downs">
+                                    <li><a href="file:///Users/ogatasaki/Downloads/UpGold/graphic.html">graphicdesign</a></li><br>
+                                    <li><a href="file:///Users/ogatasaki/Downloads/UpGold/interior.html">interiordesign</a></li><br>
+                                    <li><a href="file:///Users/ogatasaki/Downloads/UpGold/meo.html">MEO&Stepmail</a></li><br>
+                                    <li><a href="file:///Users/ogatasaki/Downloads/UpGold/sns.html">SNSmarketing</a></li><br>
+                                    <li><a href="file:///Users/ogatasaki/Downloads/UpGold/video.html">MOVIE&PHOTO</a></li><br>
+                                </ul>
+                            </li>
+                            <li><a href="file:///Users/ogatasaki/Downloads/UpGold/voice.html">VOICE</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+        </nav>
+
+        <!---ここからハンバーガー-->
+            <div class="toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+
+        <!---ここからトップー-->
+            <div class="top">
+                <h1>Service<span class="h2">＆</span>Price</h1>
+                <h2>サービス&参考価格</h2>
+                <h3>内装デザイン</h3>
+                <p>工事伴う:工事費の11%</p>
+                <div class="parent"> 
+                    <div class="div1"> </div> 
+                    <div class="div2"> </div> 
+                    <div class="div3"> </div> 
+                    <div class="div4"> </div> 
+                </div> 
+                <h3>家具提案</h3>
+                <p>家具のみ提案:66,000〜</p>
+                <div class="parent2"> 
+                    <div class="div5"> </div> 
+                    <div class="div6"> </div> 
+                </div> 
+                <h3>リノベ・新築</h3>
+                <p>-80m2110,000-</p>
+                <div class="parent3"> 
+                    <div class="div7"> </div> 
+                    <div class="div8"> </div> 
+                </div> 
+            </div>   
+            <footer>
+                <div class="footer1">
+                    <img src="img/logo-text-white.png" alt="テキストロゴ">
+                    <p>各種クリエイターが集まるクリエイティブオフィス</p>
+                    <div class="sns">
+                        <a href="">INSTAGRAM</a><br><br>
+                        <a href="">LINE@</a>
+                    </div>
+                </div>
+                <div class="footer2">
+                    <p>&copy UPGOLD ALL Right Reserved</p>
+                </div>
+            </footer>
+            <script>
+                $(function() {
+                    $('.toggle').click(function() {
+                        $(this).toggleClass('active');
+                        if ($(this).hasClass('active')) {
+                            $('.gnav').addClass('active');
+                        } else {
+                            $('.gnav').removeClass('active');
+                        }
+                    });
+                });</script>
+    </body>
+</html>
